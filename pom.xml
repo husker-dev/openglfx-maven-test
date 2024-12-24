@@ -38,8 +38,6 @@
     </dependencyManagement>
     <dependencies>
 
-
-
         <dependency>
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
