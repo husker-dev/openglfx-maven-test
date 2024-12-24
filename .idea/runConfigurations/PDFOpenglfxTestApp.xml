@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PDFOpenglfxTestApp" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+    <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.sdkman/candidates/java/current" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="gridx.lwjgl.test.PDFOpenglfxTestApp" />
+    <module name="gridx-lwjlg" />
+    <option name="VM_PARAMETERS" value="--add-exports=javafx.graphics/com.sun.javafx.scene.layout=ALL-UNNAMED -Dorg.lwjgl.util.Debug=true --add-opens=javafx.base/com.sun.javafx=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.prism=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.prism.d3d=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.scene.layout=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.geom=ALL-UNNAMED --add-opens=javafx.graphics/javafx.scene.image=ALL-UNNAMED --add-exports=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.scene.layout=openglfx --add-opens=javafx.graphics/com.sun.prism=openglfx --add-opens=javafx.graphics/com.sun.javafx.sg.prism=openglfx --add-opens=javafx.graphics/com.sun.prism.d3d=openglfx --add-opens=javafx.graphics/com.sun.javafx.scene=openglfx" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="gridx.lwjgl.internal.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
