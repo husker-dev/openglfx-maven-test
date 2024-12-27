@@ -18,7 +18,7 @@
         <app.launcher>sample.Launcher</app.launcher>
         <lwjgl.natives>natives-windows</lwjgl.natives>
         <lwjgl.version>3.3.4</lwjgl.version>
-        <openglfx.version>4.0.5</openglfx.version>
+        <openglfx.version>4.1.15</openglfx.version>
         <joml.version>1.9.25</joml.version>
         <tinylog.version>2.7.0</tinylog.version>
         <javafx.version>23.0.1</javafx.version>
@@ -72,14 +72,19 @@
         </dependency>
         <dependency>
             <groupId>com.huskerdev</groupId>
-            <artifactId>openglfx</artifactId>
-            <version>${openglfx.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.huskerdev</groupId>
             <artifactId>openglfx-lwjgl</artifactId>
             <version>${openglfx.version}</version>
 
+            <exclusions>
+                <exclusion>
+                    <groupId>com.huskerdev</groupId>
+                    <artifactId>openglfx-natives-core-linux</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.huskerdev</groupId>
+                    <artifactId>openglfx-natives-core-macos</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.tinylog</groupId>
@@ -108,7 +113,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.13.0</version>
                 <configuration>
                     <compilerArgs>
                         <arg>--add-exports=javafx.graphics/com.sun.javafx.scene.layout=ALL-UNNAMED</arg>
@@ -323,6 +328,11 @@
             <id>maven_central</id>
             <name>Maven Central</name>
             <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>local</id>
+            <name>local</name>
+            <url>file:///~\.m2\repository</url>
         </repository>
     </repositories>
     <profiles>
